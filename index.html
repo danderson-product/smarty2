@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Smarty Landing Page</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="logo-box">
+        <a href="#top"><img id="header-img" src="Smarty_logo-Dark Moss-02.png" alt="Smarty Logo" /></a>
+      </div>
+      <!-- Logo -->
+      <!-- Navbar -->
+      <nav id="nav-bar">
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+        <ul class="menu">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="https://www.linkedin.com" class="nav-link" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <a class="highlight" href="https://daniel-anderson.youcanbook.me" target="_blank" rel="noopener noreferrer">Book Demo</a>
+        </ul>
+      </nav>
+      <!-- Navbar ends -->
+    </header>
+    <!-- header ends -->
+    <main id="top" class="container">
+      <section class="hero container">
+        <h1 class="hero-title-primary">Boost Your Store’s Performance</h1>
+        <p class="hero-title-sub">AI-powered insights, seamless review collection, and WhatsApp notifications to keep your business running smoothly.</p>
+        <a href="https://daniel-anderson.youcanbook.me" target="_blank" rel="noopener noreferrer">
+          <button>Book a Free Demo</button>
+        </a>
+      </section>
+      <div class="hero-image">
+        <figure>
+          <!-- Add any SVG or hero image here -->
+        </figure>
+      </div>
+    </main>
+    <!-- Waves Container -->
+    <div>
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+      </svg>
+    </div>
+    <!-- Waves end -->
+    
+    <!-- Key Features Section -->
+    <section class="key-features">
+      <div class="feature-box">
+        <h3>AI Data Analysis</h3>
+        <p>Leverage AI insights to identify and resolve issues quickly.</p>
+      </div>
+      <div class="feature-box">
+        <h3>WhatsApp Notifications</h3>
+        <p>Stay updated on the go with real-time notifications.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Seamless Onboarding</h3>
+        <p>Get started easily with integration across all platforms.</p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="content">
+      <div id="about" class="inner-content">
+        <div class="inner-content-text content__TextLeft">
+          <div class="inter-content-subtitle">About</div>
+          <div class="inner-content-title">Why Smarty?</div>
+          <div class="inner-content-para">
+            <p>
+              Smarty automates and organizes your restaurant’s reviews, stats, and feedback from multiple platforms to help you focus on improving your customer experience and driving sales.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="subscribe-container" id="contact">
+      <div class="hero-newsletter">
+        <h1>Ready to take your business to the next level?</h1>
+        <h2>Let's Chat!</h2>
+      </div>
+      <div class="form-container">
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+          <input type="text" placeholder="Your Name" name="name" id="name" required>
+          <input type="email" placeholder="Email Address" name="email" id="email" required>
+          <input type="submit" id="submit" value="Submit">
+        </form>
+      </div>
+    </section>
+
+    <!-- Scroll Up Button -->
+    <a href="#top" class="scroll-up">
+      <span class="material-icons">arrow_upward</span>
+    </a>
+
+    <!-- Scroll Button JS -->
+    <script>
+      window.onscroll = function () {
+        const scrollButton = document.querySelector('.scroll-up');
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+        const windowHeight = document.documentElement.scrollHeight - window.innerHeight;
+        
+        if (scrollTop / windowHeight > 0.9) {
+          scrollButton.style.display = "block";
+        } else {
+          scrollButton.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>
